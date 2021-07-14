@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_color"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/nav_user_photo"
+        android:layout_width="121dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/nav_user_photo2"
+        app:layout_constraintStart_toStartOf="@+id/nav_user_photo2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="14dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/nav_user_photo2"
+        android:layout_width="121dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/nav_username"
+        app:layout_constraintStart_toStartOf="@+id/nav_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="14dp" />
+
+    <TextView
+        android:id="@+id/nav_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:text="text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav_user_photo" />
+
+    <TextView
+        android:id="@+id/nav_user_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="text"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/nav_username"
+        app:layout_constraintStart_toStartOf="@+id/nav_username"
+        app:layout_constraintTop_toBottomOf="@+id/nav_username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
