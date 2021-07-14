@@ -45,5 +45,5 @@ dependencies {
     //airbnb animation in splash screen
     implementation 'com.airbnb.android:lottie:3.5.0'
 
-    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.0"))
 }
