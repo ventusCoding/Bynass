@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:text="Pending"
         android:textAlignment="center"
-        android:textColor="#AA872D"
+        android:textColor="@color/pending"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/assurence_name"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
